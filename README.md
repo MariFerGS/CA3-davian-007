@@ -89,12 +89,9 @@ foreach (int num in numarray)
  - Namespaces
  - Directiva Using
 La directiva using tiene tres usos:
-Para permitir el uso de tipos en un espacio de nombres de manera que no tenga que calificar el uso de un tipo en dicho espacio de nombres.
-using System.Text;
-Para permitirle acceder a los miembros estáticos de un tipo sin tener que calificar el acceso con el nombre del tipo:
-using static System.Math;
-Para crear un alias para un espacio de nombre o un tipo. Esto se denomina una directiva de alias using.
-using Project = PC.MyCompany.Project;
+ - Para permitir el uso de tipos en un espacio de nombres de manera que no tenga que calificar el uso de un tipo en dicho espacio de nombres. using System.Text;
+ - Para permitirle acceder a los miembros estáticos de un tipo sin tener que calificar el acceso con el nombre del tipo: using static System.Math;
+ - Para crear un alias para un espacio de nombre o un tipo. Esto se denomina una directiva de alias using. using Project = PC.MyCompany.Project;
 
 ```C#
 //Librerías Comunes
