@@ -74,10 +74,20 @@ for (int i = 1; i <= 5; i++)
 }
 ```
 - **Uso de librerias - bibliotecas**
--*Namespaces*
+ - Namespaces
+ - Directiva Using
+La directiva using tiene tres usos:
+Para permitir el uso de tipos en un espacio de nombres de manera que no tenga que calificar el uso de un tipo en dicho espacio de nombres.
+using System.Text;
+Para permitirle acceder a los miembros estáticos de un tipo sin tener que calificar el acceso con el nombre del tipo:
+using static System.Math;
+Para crear un alias para un espacio de nombre o un tipo. Esto se denomina una directiva de alias using.
+using Project = PC.MyCompany.Project;
+
 ```C#
-//Comunes
+//Librerías Comunes
 using System;
+using System.Collections;
 using System.Collections.Generic;
 using System.ComponentModel;
 using System.Data;
@@ -85,14 +95,21 @@ using System.Drawing;
 using System.Linq;
 using System.Text;
 using System.Windows.Forms;
+using System.Threading.Tasks;
+//Entre otras
 ```
 
 
-- **Sistemas numéricos**
-- *Binario* 11010101
-- *Octal*  325
-- *Decimal*  213
-- *Hexadecimal*  D5
+- **Sistemas de numeración**
+¿Qué es un sistema de numeración?
+Un sistema de numeración es un conjunto de símbolos y reglas de generación que permiten construir todos los números válidos. Un sistema de numeración puede representarse como N=(S,R), donde:
+ - N es el sistema de numeración considerado (p.ej. decimal, binario,hexadecimal, etc.).
+ - S es el conjunto de símbolos permitidos en el sistema.
+ - R son las reglas que nos indican qué números y qué operaciones son válidos en el sistema, y cuáles no. En un sistema de numeración posicional las reglas son bastante simples, mientras que la numeración romana requiere reglas algo más elaboradas.
+- *Binario - (0,1)* 11010101
+- *Octal - (0,7)*  325
+- *Decimal - (0,9)*  213
+- *Hexadecimal - (0,F)*  D5
 
 
 - **Pendientes**
