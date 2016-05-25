@@ -38,7 +38,7 @@ struct Book
 {
     int bookid;
     string bookname;
-    string author
+    string author;
     double bookprice;
 };
 
