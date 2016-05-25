@@ -54,11 +54,14 @@ struct Game
 //unidimencionales - vectores
 int[] vector1 = new int[4];
 int[] vector2 = new int[] { 1, 3, 9, 12, 15 };
-int[] array1 = { 1, 2, 3, 4, 5, 6 };
+int[] vector3 = { 1, 2, 3, 4, 5, 6 };
+char[] array1 = { 'J', 'o', 's', 'e'};
 
 //multidimencionales - matrices
 int[,] matrix1 = new int[2, 3];
 int[,] matrix2 = { { 1, 2, 3 }, { 4, 5, 6 } };
+string[,] names = new string[5,5];
+byte[][] scores = new byte[5][5];
 ```
 - **Ciclos**
 - *For*
@@ -73,6 +76,15 @@ for (int i = 1; i <= 5; i++)
     Console.WriteLine(vector2[i]);
 }
 ```
+- *Foreach*
+```C#
+int[] numarray = new int[] { 0, 1, 2, 3, 4};
+foreach (int num in numarray)
+{
+    System.Console.WriteLine(num);
+}
+```
+
 - **Uso de librerias - bibliotecas**
  - Namespaces
  - Directiva Using
